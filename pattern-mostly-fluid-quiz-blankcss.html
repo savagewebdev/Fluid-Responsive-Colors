@@ -57,9 +57,52 @@
       }
     </style>
     <style type="text/css">
-      /*
-      These are the responsive styles. Throw some breakpoints in here!
-      */
+    
+      @media screen and (min-width: 450px) {
+        .box.dark_blue {
+          width: 100%;
+        }
+        .box.light_blue {
+          width: 50%;
+        }
+        .box.green {
+          width: 50%;
+        }
+        .box.red {
+          width: 100%;
+        }
+        .box.orange {
+          width: 100%;
+        }
+      }
+      
+      @media screen and (min-width: 550px) {
+        .box.dark_blue {
+          width: 100%;
+        }
+        .box.light_blue {
+          width: 50%;
+        }
+        .box.green {
+          width: 50%;
+        }
+        .box.red {
+          width: 34%;
+        }
+        .box.orange {
+          width: 66%;
+        }
+      }
+
+/*The container should have a fixed pixel width in order to contain all of the elements.*/
+      @media screen and (min-width: 800px) {
+        .container {
+          width: 800px;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+      
       .container {
         display: flex;
         flex-wrap: wrap;
